@@ -1,1 +1,85 @@
-<h1> wello </>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Situs contoh dengan Tailwind CSS">
+    <title>Situs Saya</title>
+    <!-- Gunakan Tailwind CDN yang benar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Lebih akurat di mobile */
+      .h-screen {
+        height: 100dvh;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-green-500 p-4 text-white z-50" id = "navbars">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="/img/hearth.svg" alt="Logo" class="w-6 h-6">
+          <a href="#" class="text-xl font-bold">Logo</a>
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="hover:text-green-100 hover:underline">Beranda</a>
+          <a href="#" class="hover:text-green-100 hover:underline">Tentang</a>
+          <a href="#" class="hover:text-green-100 hover:underline">Layanan</a>
+          <a href="#" class="hover:text-green-100 hover:underline">Kontak</a>
+        </div>
+
+        <!-- Tombol Mobile -->
+        <button id="menu-toggle" class="md:hidden text-white" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 container mx-auto">
+        <a href="#" class="text-white hover:text-green-100">Beranda</a>
+        <a href="#" class="text-white hover:text-green-100">Tentang</a>
+        <a href="#" class="text-white hover:text-green-100">Layanan</a>
+        <a href="#" class="text-white hover:text-green-100">Kontak</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="h-screen w-full bg-gray-400 relative">
+      <div class="fixed bottom-4 right-4 text-white space-y-4 flex flex-col z-50">
+        <a href="https://example.com/1" target="_blank" rel="noopener">
+          <img src="/img/hearth.svg" alt="Tautan 1" class="w-8 h-8">
+        </a>
+        <a href="https://example.com/2" target="_blank" rel="noopener">
+          <img src="/img/hearth.svg" alt="Tautan 2" class="w-8 h-8">
+        </a>
+        <a href="https://example.com/3" target="_blank" rel="noopener">
+          <img src="/img/hearth.svg" alt="Tautan 3" class="w-8 h-8">
+        </a>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="h-screen w-full bg-gray-100 flex items-center justify-center">
+      <p class="text-gray-600">Bagian 2</p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="h-screen w-full bg-gray-200 flex items-center justify-center">
+      <p class="text-gray-600">Bagian 3</p>
+    </div>
+
+    <script>
+      // Toggle mobile menu
+      document.getElementById('menu-toggle').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
