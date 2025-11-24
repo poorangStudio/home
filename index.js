@@ -5,11 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!navbar) return;
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            navbar.classList.replace('bg-green-500', 'bg-white');
+        if (window.scrollY > window.innerHeight*0.20) {
             navbar.classList.replace('text-white', 'text-black');
         } else {
-            navbar.classList.replace('bg-white', 'bg-green-500');
             navbar.classList.replace('text-black', 'text-white');
         }
     });

@@ -1,0 +1,13 @@
+.rotate-90 {
+  display: inline-block;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  margin-left: 1rem; 
+}
+
+.bg-main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
