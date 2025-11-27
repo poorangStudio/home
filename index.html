@@ -55,15 +55,15 @@
     <div class="fixed bottom-4 right-4 z-50 flex flex-col space-y-4">
       <a href="https://example.com/1" target="_blank" rel="noopener">
         <img id="facebook_nav" src="00--facebook.png" alt="Facebook"
-        class="h-10 w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
+        class=" h-6 w-6 md:h-10 md:w-10 lg:h-10 lg:w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
       </a>
       <a href="https://example.com/2" target="_blank" rel="noopener">
         <img id="twitter_nav" src="00--twitter.png" alt="Twitter"
-        class="h-10 w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
+        class="h-6 w-6 md:h-10 md:w-10 lg:h-10 lg:w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
       </a>
       <a href="https://example.com/3" target="_blank" rel="noopener">
         <img id="discord_nav" src="00--discord.png" alt="Discord"
-        class="h-10 w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
+        class="h-6 w-6 md:h-10 md:w-10 lg:h-10 lg:w-10 transition-transform hover:scale-125 hover:rotate-6 hover:opacity-90 animate-fadeIn">
       </a>
     </div>
 
@@ -81,10 +81,17 @@
           Kami adalah studio pengembang game independen yang berdedikasi menciptakan pengalaman bermain yang inovatif, menyenangkan, dan penuh makna. Dari ide kecil hingga dunia virtual yang utuh—kami membuat game yang menginspirasi.
         </p>
         <!-- button get started -->
-        <a href="#"
-            class="px-6 py-3 bg-green-600 hover:bg-green-500 transition rounded-lg text-white font-semibold shadow-lg"
-        > Get Started
-        </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+          <a href="#"
+              class="px-6 py-3 bg-green-600 hover:bg-green-500 transition rounded-lg text-white font-semibold shadow-lg"
+          > Get Started
+          </a>
+          <a href="#"
+              class="px-6 py-3 bg-green-600 hover:bg-green-500 transition rounded-lg text-white font-semibold shadow-lg"
+          > Get Started
+          </a>
+        </div>
+        
       </div>
     </div>
 
@@ -121,6 +128,9 @@
       <div>
         <h2 class="text-2xl font-bold text-white mb-4">Poorang Studio</h2>
         <p class="pt-4">
+          Lokasi Kantor:
+        </p>
+        <p class="pt-2">
           Dsn. tissan, RT.01 RW.01, Desa cilis, Kabupaten malang, Jawa Timur
         </p>
       </div>
