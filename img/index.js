@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1rem=32p
     window.addEventListener('scroll', () => {
         if (window.scrollY > window.innerHeight*1 + 64) {
+            navbar.classList.replace('text-white', 'text-black');
             facebookNav.src = "ff--facebook.png";
             twitterNav.src = "ff--twitter.png";
             discordNav.src = "ff--discord.png";
         } else {
+            navbar.classList.replace('text-black', 'text-white');
             facebookNav.src = "00--facebook.png";
             twitterNav.src = "00--twitter.png";
             discordNav.src = "00--discord.png";
